@@ -1,0 +1,5 @@
+pod 'FlickrKit'
+pod 'FlurryLaunchOrigin'
+pod 'Flurry-iOS-SDK/FlurrySDK'
+pod 'Flurry-iOS-SDK/FlurryAds'
+pod 'Flurry-iOS-SDK/TumblrAPI'

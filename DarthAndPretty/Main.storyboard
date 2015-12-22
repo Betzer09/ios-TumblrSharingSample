@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HDj-gN-HFM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqN-Vl-StJ">
+                                <rect key="frame" x="16" y="150" width="568" height="261"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="IL7-pl-cTF"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbS-6M-qep">
+                                <rect key="frame" x="552" y="419" width="32" height="27"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="fnh-es-7V8"/>
+                                    <constraint firstAttribute="height" constant="27" id="jip-ji-BcL"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="tumblricon">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareToTumblr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAU-2N-0im"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EqN-Vl-StJ" firstAttribute="centerX" secondItem="HDj-gN-HFM" secondAttribute="centerX" id="00c-NI-AIm"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3K4-10-rJb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EqN-Vl-StJ" secondAttribute="bottom" constant="251" id="4xq-cU-LxJ"/>
+                            <constraint firstAttribute="trailing" secondItem="HDj-gN-HFM" secondAttribute="trailing" id="6qA-Sv-3Ud"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8dt-N6-eFf"/>
+                            <constraint firstItem="EqN-Vl-StJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="8mH-ak-z57"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Apd-ce-Bg9"/>
+                            <constraint firstItem="fbS-6M-qep" firstAttribute="top" secondItem="EqN-Vl-StJ" secondAttribute="bottom" constant="8" symbolic="YES" id="CJG-d4-mY0"/>
+                            <constraint firstItem="fbS-6M-qep" firstAttribute="top" secondItem="EqN-Vl-StJ" secondAttribute="bottom" constant="8" id="CT6-Kq-CJM"/>
+                            <constraint firstItem="fbS-6M-qep" firstAttribute="trailing" secondItem="EqN-Vl-StJ" secondAttribute="trailing" id="Fmq-br-8eK"/>
+                            <constraint firstItem="EqN-Vl-StJ" firstAttribute="trailing" secondItem="fbS-6M-qep" secondAttribute="trailing" id="FwY-v2-Ukq"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IKt-Yr-KI1"/>
+                            <constraint firstAttribute="trailing" secondItem="HDj-gN-HFM" secondAttribute="trailing" id="VCC-3u-bYF"/>
+                            <constraint firstItem="EqN-Vl-StJ" firstAttribute="centerY" secondItem="HDj-gN-HFM" secondAttribute="centerY" constant="-19.5" id="W4V-Zp-CaM"/>
+                            <constraint firstItem="EqN-Vl-StJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gvg-05-9gS"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pea-nk-E8k"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="centerX" secondItem="EqN-Vl-StJ" secondAttribute="centerX" id="rtl-aq-aSH"/>
+                            <constraint firstItem="EqN-Vl-StJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="xRc-sP-dkh"/>
+                            <constraint firstItem="HDj-gN-HFM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yzN-Ug-hyp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8dt-N6-eFf"/>
+                                <exclude reference="Apd-ce-Bg9"/>
+                                <exclude reference="VCC-3u-bYF"/>
+                                <exclude reference="rtl-aq-aSH"/>
+                                <exclude reference="yzN-Ug-hyp"/>
+                                <exclude reference="8mH-ak-z57"/>
+                                <exclude reference="xRc-sP-dkh"/>
+                                <exclude reference="4xq-cU-LxJ"/>
+                                <exclude reference="CJG-d4-mY0"/>
+                                <exclude reference="Fmq-br-8eK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="fbS-6M-qep"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8dt-N6-eFf"/>
+                                <include reference="Apd-ce-Bg9"/>
+                                <include reference="VCC-3u-bYF"/>
+                                <include reference="rtl-aq-aSH"/>
+                                <include reference="yzN-Ug-hyp"/>
+                                <include reference="8mH-ak-z57"/>
+                                <include reference="xRc-sP-dkh"/>
+                                <include reference="4xq-cU-LxJ"/>
+                                <include reference="CJG-d4-mY0"/>
+                                <include reference="Fmq-br-8eK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="HDj-gN-HFM" id="tDm-HR-sFU"/>
+                        <outlet property="quote" destination="EqN-Vl-StJ" id="9KJ-J4-dph"/>
+                        <outlet property="tumblrButton" destination="fbS-6M-qep" id="b84-ng-qnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tumblricon" width="29" height="29"/>
+    </resources>
+</document>
