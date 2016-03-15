@@ -1,9 +1,9 @@
 PODS:
   - FlickrKit (1.0.7)
-  - Flurry-iOS-SDK/FlurryAds (7.3.0):
+  - Flurry-iOS-SDK/FlurryAds (7.5.1):
     - Flurry-iOS-SDK/FlurrySDK
-  - Flurry-iOS-SDK/FlurrySDK (7.3.0)
-  - Flurry-iOS-SDK/TumblrAPI (7.3.0):
+  - Flurry-iOS-SDK/FlurrySDK (7.5.1)
+  - Flurry-iOS-SDK/TumblrAPI (7.5.1):
     - Flurry-iOS-SDK/FlurryAds
     - Flurry-iOS-SDK/FlurrySDK
   - FlurryLaunchOrigin (0.0.1):
@@ -19,7 +19,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   FlickrKit: 907da468d679233a27d66dd88c6dcd024074b0f0
-  Flurry-iOS-SDK: 054befae0fa0244fb000985bfe757d70f87a9f60
+  Flurry-iOS-SDK: c0c162b6be03b259ca51fd91a026e6b8fb5ae97e
   FlurryLaunchOrigin: 29abe6b6ccfe55d8c7fd57e869368685a7447fff
 
 COCOAPODS: 0.39.0
